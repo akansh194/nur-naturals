@@ -15,9 +15,9 @@ services:
         generateValue: true
 
   # Frontend static site
-  - type: static
+  - type: web
     name: nur-naturals-client
-    env: static
+        runtime: static
     region: oregon
     branch: master
     buildCommand: cd client && npm install && npm run build
