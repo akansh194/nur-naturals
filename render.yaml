@@ -17,9 +17,9 @@ services:
   # Frontend static site
   - type: web
     name: nur-naturals-client
- runtime: static
- buildCommand: cd client && npm install && npm run build
- staticPublishPath: ./client/dist
- envVars:
-  - key: NODE_ENV
-    value: production
+    runtime: static
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: ./client/dist
+    envVars:
+      - key: NODE_ENV
+        value: production
