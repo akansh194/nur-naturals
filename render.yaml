@@ -20,6 +20,6 @@ services:
 runtime: static
 buildCommand: cd client && npm install && npm run build
 staticPublishPath: ./client/dist
-    envVars:
-      - key: NODE_ENV
-        value: production
+envVars:
+    - key: NODE_ENV
+    value: production
